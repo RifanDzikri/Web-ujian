@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Online</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="timer"></div>
+
+    <div class="container">
+
+        <h2>Ujian Pemrograman</h2>
+
+        <div id="info"></div>
+
+        <div id="quiz-container">
+            </div>
+
+        <div class="navigation">
+
+            <button onclick="prevQuestion()">
+                Prev
+            </button>
+
+            <button id="nextBtn" onclick="nextQuestion()">
+                Next
+            </button>
+
+        </div>
+
+        <div class="progress-container" style="width: 100%; background-color: #f1f3f5; border: 1px solid #e9ecef; border-radius: 8px; height: 20px; margin-top: 15px; overflow: hidden;">
+            <div id="progressBar" style="height: 100%; width: 0%; background-color: #2f6bf2; transition: width 0.3s ease;"></div>
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
